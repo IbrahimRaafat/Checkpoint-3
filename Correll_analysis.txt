@@ -1,0 +1,11 @@
+From the correlation heatmap there were:
+
+*Some logical correllations:
+0.48 corr. between Title and Age
+-0.55 corr. between Pclass and fare
+-0.25 between age and family size
+
+*Some interesting correlations that may be important:
+0.54 between sex and survival, which was already obvious from the barplot made previously
+0.26 between fare and survival
+-0.34 between pclass and survival 
