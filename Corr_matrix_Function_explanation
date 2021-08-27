@@ -1,0 +1,9 @@
+def plot_correlation_map( df ):
+
+    corr = df.corr()                                  #defining a variable that contains a corr matrix of our dataframe (df) using pandas built in function .corr()
+    s , ax = plt.subplots( figsize =( 12 , 10 ) )     # setting plot size for the upcoming visualization 
+
+    cmap = sns.diverging_palette( 220 , 10 , as_cmap = True )  #setting our plot colors pallete using seaborn library
+
+    s = sns.heatmap(corr,cmap = cmap,square=True,cbar_kws={ 'shrink' : .9 }, ax=ax, annot = True, annot_kws = { 'fontsize' : 12 }  # creating a heatmap for our corrmatrix and setting the function parameters using seaborn library functions
+    )
